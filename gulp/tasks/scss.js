@@ -17,14 +17,14 @@ export const scss = () => {
           app.plugins.notify.onError({
             title: "SCSS",
             message: "Error: <%= error.message %>",
-          })
-        )
+          }),
+        ),
       )
       .pipe(app.plugins.replace(/@img\//g, "../images/"))
       .pipe(
         sass({
           outputStyle: "expanded",
-        })
+        }),
       )
       .pipe(app.plugins.if(app.isBuild, groupCssMediaQueries()))
       .pipe(
@@ -34,8 +34,8 @@ export const scss = () => {
             grid: true,
             overrideBrowserslist: ["last 3 version"],
             cascade: true,
-          })
-        )
+          }),
+        ),
       )
       // Раскомментировать если нужен не сжатый дубль файла стилей
       // .pipe(app.gulp.dest(app.path.build.css))
@@ -43,7 +43,7 @@ export const scss = () => {
       .pipe(
         rename({
           extname: ".min.css",
-        })
+        }),
       )
       .pipe(app.gulp.dest(app.path.build.css))
       .pipe(app.plugins.browsersync.stream())

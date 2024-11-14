@@ -6,8 +6,8 @@ export const images = () => {
         app.plugins.notify.onError({
           title: "IMAJES",
           message: "Error <%= error.message %>",
-        })
-      )
+        }),
+      ),
     )
     .pipe(app.gulp.dest(app.path.build.images))
     .pipe(app.plugins.browsersync.stream());
