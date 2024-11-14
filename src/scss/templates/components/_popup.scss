@@ -1,0 +1,65 @@
+.modal {
+  --modal-bg-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  inset: 0;
+  background-color: var(--modal-bg-color);
+  cursor: pointer;
+  overflow-y: auto;
+  display: none;
+  z-index: 1;
+  &__main {
+    position: relative;
+    width: 100%;
+    max-width: 540px;
+    background-color: var(--color-tertiary);
+    margin: auto;
+    padding: 56px;
+    cursor: default;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    @include tablet {
+      padding: 20px;
+      width: 100%;
+    }
+  }
+
+  &__close {
+    --positin-btn: 25px;
+    position: absolute;
+    top: var(--positin-btn);
+    right: var(--positin-btn);
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: 1px solid transparent;
+    outline-offset: 3px;
+    transition: outline-color 0.15s ease-in-out;
+    @include tablet {
+      --positin-btn: 20px;
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 23px;
+      height: 1px;
+      background-color: var(--btn);
+    }
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    &:focus-visible {
+      outline-color: var(--btn);
+    }
+  }
+}
