@@ -8,16 +8,17 @@ export const html = () => {
         app.plugins.notify.onError({
           title: "HTML",
           message: "Error <%= error.message %>",
-        })
-      )
+        }),
+      ),
     )
     .pipe(
       pug({
         // Сжатие HTML файла
-        pretty: true,
+        pretty: !app.isBuild,
         // Показывать в терминале какой файл обработан
         // verbose: true,
-      })
+        // all doc https://pugjs.org/api/reference.html
+      }),
     )
     .pipe(app.plugins.replace(/@img\//g, "images/"))
     .pipe(
@@ -30,8 +31,8 @@ export const html = () => {
             cover: 0,
             to: ["css", "js"],
           },
-        })
-      )
+        }),
+      ),
     )
     .pipe(app.gulp.dest(app.path.build.html))
     .pipe(app.plugins.browsersync.stream());
