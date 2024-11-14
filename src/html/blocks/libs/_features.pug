@@ -1,0 +1,32 @@
+-
+    const dataCard = [
+        {
+            image:'./assets/images/content/features/features-1.png',
+            title:'Make Your business To Be Better Famous In Internet',
+            descr:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            clsImg: '',
+            link:'#'
+        },
+        {
+            image:'./assets/images/content/features/features-2.png',
+            title:'Bring Technology To Your Comfrotable Home',
+            descr:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            clsImg: 'card__img--center',
+            link:'#'
+        },
+        {
+            image:'./assets/images/content/features/features-3.png',
+            title:'Build Your Digital Product That Suitable For Your Need',
+            descr:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            clsImg: '',
+            link:'#'
+        },
+    ]
+mixin features()
+    section.features
+        .container.features__container.container__content
+            h2.features__title.title What we do to help our client grow in digital era,
+            .container__block.container__block--right
+                .features__list
+                    each card in dataCard
+                        +card(card.image, card.title, card.descr, card.clsImg)

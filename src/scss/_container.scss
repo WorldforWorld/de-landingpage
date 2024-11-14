@@ -1,0 +1,18 @@
+.container {
+  padding-inline: 20px;
+  width: 100%;
+  margin: 0 auto;
+  &__fluid {
+    max-width: 1236px;
+  }
+  &__content {
+    max-width: 977px;
+  }
+  &__block {
+    width: 100%;
+    max-width: 859px;
+    &--right {
+      margin-left: auto;
+    }
+  }
+}
