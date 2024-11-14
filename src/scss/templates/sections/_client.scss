@@ -1,0 +1,42 @@
+.client {
+  border-radius: 200px 0px 0px 0px;
+  background: var(--bg-color);
+  padding-top: 96px;
+  padding-bottom: 123px;
+
+  @include tablet {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    border-radius: 100px 0px 0px 0px;
+  }
+  @include mobile-s {
+    border-radius: 0;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 111px;
+    @include tablet {
+      justify-content: center;
+      margin-bottom: 55px;
+    }
+    @include mobile {
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+  }
+  &__title {
+    max-width: 300px;
+    color: var(--color-tertiary);
+  }
+  &__description {
+    max-width: 540px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: 0.05em;
+    color: var(--color-text-secondary);
+  }
+}

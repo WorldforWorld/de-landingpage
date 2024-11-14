@@ -1,0 +1,58 @@
+.promo {
+  background: linear-gradient(
+    0deg,
+    rgba(152, 195, 232, 0.2) 0%,
+    rgba(152, 195, 232, 0) 31.12%
+  );
+  &__wrapper {
+    max-width: 1331px;
+    margin: 0 auto;
+    background: url(../images/content/promo/promo.png) no-repeat right bottom /
+      contain;
+    @include mobile {
+      background: none;
+    }
+  }
+  &__content {
+    padding: 59px 0px 190px 0px;
+    @include tablet {
+      padding: 39px 0px 150px 0px;
+    }
+    @include mobile {
+      padding: 29px 0px 60px 0px;
+    }
+  }
+  &__title {
+    max-width: 564px;
+    margin-bottom: 41px;
+    color: var(--color-primary);
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 116%;
+    letter-spacing: 0.04em;
+    text-align: left;
+    @include tablet {
+      font-size: 54px;
+    }
+    @include mobile {
+      max-width: 100%;
+      font-size: 44px;
+    }
+  }
+  &__description {
+    max-width: 414px;
+    color: var(--color-text-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: 0.064em;
+    margin-bottom: 50px;
+    @include tablet {
+      margin-bottom: 50px;
+    }
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+}
