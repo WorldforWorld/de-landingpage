@@ -1,6 +1,48 @@
 mixin footer()
-    footer.footer
-        if block 
-            block 
-        else 
-            .footer
+    footer.footer 
+        .footer__wrap
+            .container.container__content.footer-translate
+                header.footer__header.container__block
+                    .footer__contet
+                        h2.footer__title.title Intersted to woek with our team?
+                        .footer__description 
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    button.btn.btn--big.footer__btn Let’s Talk
+            .footer__body 
+                .container.container__content.footer-translate
+                    .footer__body__wrap
+                        .footer__block 
+                            a.footer__logo(href="/")
+                                img(src="./assets/images/logo-footer.png", alt="logo")
+                                | Afrianska
+                            address.address.footer__address 
+                                li.address__item A.
+                                    span Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                li.address__item T.
+                                    a(href="tel:+6281273134321") +62-812-7313-4321
+                                li.address__item E
+                                    a(href="mailto:hello.afrian@gmail.com") hello.afrian@gmail.com
+                        .footer__block 
+                            h3.footer__head About US
+                            ul.footer__list 
+                                li 
+                                    a(href="#") About
+                                li 
+                                    a(href="#") What We Do
+                                li 
+                                    a(href="#") Project
+                                li 
+                                    a(href="#") How It Work With Us
+                        .footer__block 
+                            h3.footer__head Follow US
+                            ul.footer__list 
+                                li 
+                                    a(href="#") Instagram
+                                li 
+                                    a(href="#") Facebook
+                                li 
+                                    a(href="#") LinkedIn
+                                li 
+                                    a(href="#") Youtube
+                    .footer__copyright
+                        p 2019 © Afrianska. All rights reserved.
