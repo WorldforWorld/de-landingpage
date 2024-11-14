@@ -1,8 +1,0 @@
-mixin field(nameSelect='', textLabel='', typeAtr='text', isTextarea=false, valueText='')
-    .form__field
-        if textLabel !== ''
-            label.label.form__label(for=nameSelect)=textLabel
-        if isTextarea
-            textarea.textarea.form__textarea(id=nameSelect name=nameSelect placeholder=valueText cols="10" rows="4")
-        else 
-            input.input.form__input(id=nameSelect type=typeAtr name=nameSelect inputmode=typeAtr placeholder=valueText)
