@@ -1,0 +1,130 @@
+.footer {
+  background-color: var(--bg-color);
+  &__wrap {
+    padding-top: 91px;
+    padding-bottom: 64px;
+    border-radius: 0 200px 0 0;
+    margin-right: 96px;
+    background-color: var(--color-secondary);
+    @include tablet {
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+    @media (max-width: 1080px) {
+      margin-right: 0;
+    }
+    @include tablet {
+      padding-top: 50px;
+      padding-bottom: 80px;
+      border-radius: 0 100px 0 0;
+    }
+    @include mobile-s {
+      border-radius: 0;
+    }
+  }
+  &-translate {
+    transform: translateX(5%);
+    @media (max-width: 1080px) {
+      transform: none;
+    }
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    @include tablet {
+      padding-bottom: 50px;
+    }
+  }
+  &__contet {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    max-width: 460px;
+  }
+  &__title {
+    max-width: 326px;
+    color: var(--color-tertiary);
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: 0.05em;
+    color: var(--color-text-secondary);
+  }
+  &__head {
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: var(--color-tertiary);
+  }
+  &__body {
+    position: relative;
+    &::before {
+      content: "";
+      left: 0;
+      top: 0;
+      width: 80%;
+      height: 1px;
+      display: block;
+      background-color: var(--color-tertiary-4);
+    }
+    &__wrap {
+      display: flex;
+      gap: 10%;
+      padding-top: 96px;
+      padding-bottom: 65px;
+      @include tablet {
+        gap: 30px;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-bottom: 40px;
+      }
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 33px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 164%;
+    letter-spacing: 0.02em;
+    color: var(--color-tertiary);
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    li {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 162%;
+      letter-spacing: 0.05em;
+      color: var(--color-tertiary);
+      a {
+        color: currentColor;
+        text-decoration: none;
+        transition: color ease-in-out 0.2s;
+        @include hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+  &__copyright {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: 0.05em;
+    color: var(--color-tertiary-4);
+  }
+}
