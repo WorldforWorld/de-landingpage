@@ -47,7 +47,7 @@ export function formHandler(selector) {
       };
 
       const errorSubmit = (errorMessage) => {
-        alert(errorMessage || "Ошибка");
+        return errorMessage || "Ошибка";
       };
 
       return {
@@ -57,10 +57,6 @@ export function formHandler(selector) {
         error: errorSubmit,
         reset: resetForm,
       };
-    } else {
-      console.debug("form или .success в обёртке не найдены.");
     }
-  } catch (error) {
-    console.debug("form или .success в обёртке не найдены.");
-  }
+  } catch (error) {}
 }

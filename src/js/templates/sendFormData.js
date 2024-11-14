@@ -23,7 +23,6 @@ export async function sendFormData(form, urlPath) {
       return false;
     }
   } catch (error) {
-    console.error("Ошибка при отправке данных формы:", error);
     return false;
   }
 }
