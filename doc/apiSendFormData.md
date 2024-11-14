@@ -14,6 +14,8 @@
 ##### Примеп использования
 
 ```js
+const form = document.querySelector(".form");
+const urlPath = "https://mp2a61c2e84e64c2fd14.free.beeceptor.com/data";
 form.addEventListener("submit", async (event) => {
   const isSuccess = await sendFormData(form, urlPath);
 
