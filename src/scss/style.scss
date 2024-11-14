@@ -1,12 +1,23 @@
 // Settigs
 @import "normalize";
 @import "variables";
-@import "media";
-@import "grid";
-@import "settings";
 @import "fonts";
-@import "templates/header";
-@import "templates/footer";
+@import "media";
+@import "settings";
+@import "container";
 
 // Elements
+@import "templates/elements/ui";
+@import "templates/elements/icons";
+
 // Components
+@import "templates/components/card";
+@import "templates/components/logo-list";
+@import "templates/components/address";
+
+// Sections
+@import "./templates/sections/promo";
+@import "./templates/sections/features";
+@import "./templates/sections/client";
+@import "templates/header";
+@import "templates/footer";
