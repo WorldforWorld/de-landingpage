@@ -1,0 +1,13 @@
+.success {
+  display: none;
+  &.visible {
+    display: block;
+  }
+  &__content {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: var(--color-primary);
+  }
+}
