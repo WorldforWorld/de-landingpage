@@ -31,9 +31,12 @@
     "sass": "1.54.0",
     "swiper": "8.3.2",
     "webpack": "5.74.0",
-    "webpack-stream": "7.0.0"
-  },
-  "dependencies": {
-    "@fancyapps/ui": "^5.0.36"
+    "webpack-stream": "7.0.0",
+    "eslint": "^9.14.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.2.1"
   }
 }
