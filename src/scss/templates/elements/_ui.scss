@@ -50,7 +50,7 @@
   color: var(--color-primary);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
-  outline-color: var(--border-color);
+  outline: none;
 
   @include tablet {
     padding: 10px 21px;
@@ -60,5 +60,8 @@
   }
   &.invalid {
     border-color: var(--color-error);
+  }
+  &:focus-visible {
+    border-color: var(--border-color);
   }
 }
