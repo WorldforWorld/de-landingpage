@@ -33,15 +33,10 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 150%;
-    letter-spacing: 0.05em;
     color: var(--color-primary);
   }
   &__descr {
     margin-bottom: 32px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 162%;
-    letter-spacing: 0.05em;
     color: var(--color-text-primary);
   }
   &__btn {
@@ -51,7 +46,6 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 214%;
-    letter-spacing: 0.05em;
     color: var(--btn);
     text-decoration: none;
     transition: column-gap ease-in-out 0.2s;

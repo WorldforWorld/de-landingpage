@@ -43,11 +43,7 @@
   &__description {
     max-width: 414px;
     color: var(--color-text-primary);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 162%;
-    letter-spacing: 0.064em;
-    margin-bottom: 50px;
+    margin-bottom: 74px;
     @include tablet {
       margin-bottom: 50px;
     }

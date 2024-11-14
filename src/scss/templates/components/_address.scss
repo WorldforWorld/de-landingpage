@@ -4,10 +4,6 @@
   row-gap: 22px;
   max-width: 299px;
   &__item {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 162%;
-    letter-spacing: 0.05em;
     display: grid;
     grid-template-columns: 19px 1fr;
     gap: 16px;
